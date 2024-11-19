@@ -1,16 +1,7 @@
-# mlfs-book
-O'Reilly book - Building Machine Learning Systems with a feature store: batch, real-time, and LLMs
+# knutsa lab1 in course: ID2223/FID3020 HT24 Scalable Machine Learning and Deep Learning
 
+The dashboard is available [here](https://knutsa.github.io/scalable_lab1/air-quality/).
 
-## ML System Examples
+My model predicts pm25 values at [Utö, Länsi-Turunmaa](https://aqicn.org/city/finland/lansi-turunmaa/uto/), an island in the southern part of the Finish archipelago.
 
-
-[Dashboards for Example ML Systems](https://featurestorebook.github.io/mlfs-book/)
-
-## Course Comparison
-
-| Course                         | MLOps | LLLMs             | Feature/Training/Inference | Working AI Systems | Focus |
-|--------------------------------|-------|----------------------------|--------------------|------------------|
-| Building AI Systems (O'Reilly) | Yes   | Fine-Tuning & RAG | Yes                        | High               | Project-based, Software Engineering, Fundamentals    |
-| [Made With ML](https://madewithml.com/)                   | No          | Yes   | No                         | No                 | Software Engineering, Model Training   |
-| [7 Steps MLOps](https://www.pauliusztin.me/courses/the-full-stack-7-steps-mlops-framework)            | Yes   | Separate Course    | Yes                        | Low                | Learning Tools and Project    |
+In addition to the weather features 'temperature_2m_mean', 'precipitation_sum', 'wind_speed_10m_max' and 'wind_direction_10m_dominant', my model also uses the pm25 value of the previous three days. When predicting multiple days into the future, the model predicts values sequentially since the value for each day is dependant on the predictions of earlier days.

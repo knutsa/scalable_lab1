@@ -1,4 +1,5 @@
 **api-key.txt
+**.nbconvert.ipynb
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

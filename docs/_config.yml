@@ -1,3 +1,6 @@
 theme: jekyll-theme-minimal
 title: Air Quality Predictions Dashboard, knutsa
 description: Dashboards for ML Systems built in lab1 by knutsa
+
+author: "Knut Salomonsson"
+email: "knutsa@kth.se"

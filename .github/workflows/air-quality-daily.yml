@@ -2,7 +2,7 @@ name: air-quality-daily
 
 on:
   schedule:
-    - cron: '43 * * * *'
+    - cron: '49 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -42,7 +42,7 @@ jobs:
           commit_message: "Air Quality Dashboard published"
           commit_options: '--no-verify --signoff'
 
-          file_pattern: 'docs/air-quality/assets/img/* docs/_includes/* notebooks/ch03/.cache.sqlite'
+          file_pattern: 'docs/air-quality/assets/img/* docs/_includes/*'
 
           repository: .
 
